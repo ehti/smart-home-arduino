@@ -84,15 +84,15 @@ void loop()
 					rf=sSerial.read();
 					if( rf == '0')            //light OFF
 					{
-					  state=0;
-					  digitalWrite(8,LOW);
-					  smsalert(0);
+						state=0;
+						digitalWrite(8,LOW);
+						smsalert(0);
 					}
 					else if(rf == '1')    //light ON
 					{
-					 state=1;
-					 digitalWrite(8,HIGH);
-					 smsalert(1);
+						state=1;
+						digitalWrite(8,HIGH);
+						smsalert(1);
 					}
 				}
 				else if ( rf == 'b')
