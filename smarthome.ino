@@ -98,7 +98,7 @@ void loop()
 				else if ( rf == 'b')
 				{
 					rf=sSerial.read();
-				    if(rf == '0')
+					if(rf == '0')
 					{
 						cstate=0;
 						digitalWrite(9,LOW);
